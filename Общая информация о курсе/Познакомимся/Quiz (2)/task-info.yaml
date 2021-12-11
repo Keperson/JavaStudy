@@ -1,0 +1,28 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Из Вконтакте
+- text: Из инстаграмм
+- text: Из телеграмм
+- text: Из рассылки Stepika
+- text: Из поисковых систем
+- text: Посоветовали в учебном заведении
+- text: Посоветовали друзья/коллеги
+- text: Другое (Напишу в комментариях)
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz

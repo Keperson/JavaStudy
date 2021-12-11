@@ -1,0 +1,42 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Анализ цифр числа</h2> 
+  <p>При помощи операции деления (<code>/</code>) и деления с остатком (<code>%</code>) можно анализировать число:</p> 
+  <pre><code>int a = Convert.ToInt32(Console.ReadLine()); // 1024
+
+Console.WriteLine("a/10 = " + a/10); // 102
+
+Console.WriteLine("a%10 = " + a % 10); // 4</code></pre> 
+  <p><br> При помощи деления с остатком (<code>%</code>) на <span class="math-tex">\( 10, 100, 1000 \)</span>, и так далее можно получить столько <strong>последних цифр</strong>, сколько <strong>нулей </strong>в делителе.</p> 
+  <p>Например:</p> 
+  <ul> 
+   <li>при делении с остатком числа на <span class="math-tex">\( 10 \)</span>, мы получим его <strong>одну </strong>последнюю <strong>цифру</strong>, так как в делителе <strong>один ноль</strong>;&nbsp; &nbsp;</li> 
+   <li>при делении с остатком числа на <span class="math-tex">\( 100 \)</span>, мы получим его <strong>две</strong> последние <strong>цифры</strong>, так как в делителе <strong>два нуля</strong></li> 
+  </ul> 
+  <p>Для наглядности напишем программу:</p> 
+  <pre><code>int a = 1024;
+Console.WriteLine("a % 10 = " + a % 10); // 4
+
+Console.WriteLine("a % 100 = " + a % 100); // 24
+
+Console.WriteLine("a % 1000 = " + a % 1000); // 24
+
+Console.WriteLine("a % 10000 = " + a % 10000); // 1024</code></pre> 
+  <p><br> При помощи деления (<code>/</code>) <span class="math-tex">\( 10, 100, 1000, \)</span>&nbsp;10000 действует такое же правило, только берется все,&nbsp;<strong>кроме </strong>последних цифр.</p> 
+  <ul> 
+   <li>при делении&nbsp; числа на <span class="math-tex">\(10\)</span>, мы получим все число, кроме его последней цифры, так как в делителе <span class="math-tex">\(1\)</span> ноль;</li> 
+   <li>при делении числа на <span class="math-tex">\(100\)</span>, мы получим число без его двух последних цифр, так как в делителе два нуля.</li> 
+  </ul> 
+  <p>Для наглядности снова напишем программу:</p> 
+  <pre><code>int a = 1024;
+
+Console.WriteLine("a / 10 = " + a/10); // 102
+
+Console.WriteLine("a / 100 = " + a / 100); // 10
+
+Console.WriteLine("a / 1000 = " + a / 1000); // 1
+
+Console.WriteLine("a / 10000 = " + a / 10000); // 0</code></pre>
+ </body>
+</html>

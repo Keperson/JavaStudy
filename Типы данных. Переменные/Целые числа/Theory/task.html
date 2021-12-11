@@ -1,0 +1,64 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Операции с целыми числами</h2> 
+  <p>Все операции делятся на два типа:</p> 
+  <ul> 
+   <li><strong>унарные </strong></li> 
+   <li><strong>бинарные</strong>.</li> 
+  </ul> 
+  <p>К <strong>унарным </strong>относятся операции, в которых участвует <strong>один </strong>операнд. В бинарных операциях участвуют&nbsp;<strong>два </strong>операнда.<br> <strong>Операнд </strong>– это данные, которые принимают участие в операции.</p> 
+  <p>&nbsp;</p> 
+  <h3 style="text-align: center;"><strong>Бинарные операторы</strong></h3> 
+  <p><br> Например, оператор сложения <code>+</code>&nbsp;– бинарный: <span class="math-tex">\( 2+3 \)</span> – операндами являются числа <span class="math-tex">\( 2 \)</span> и <span class="math-tex">\( 3 \)</span>.</p> 
+  <p><br> <br> Список <strong>бинарных </strong>арифметических операций:</p> 
+  <ol> 
+   <li>сложение:&nbsp;<span class="math-tex">\( a + b \)</span></li> 
+   <li>вычитание:&nbsp;<span class="math-tex">\( a - b \)</span></li> 
+   <li>умножение:&nbsp;<span class="math-tex">\( a * b \)</span></li> 
+   <li>деление 
+    <ol> 
+     <li>нацело:&nbsp;<span class="math-tex">\( a / b \)</span></li> 
+     <li>остаток от деления:&nbsp;<span class="math-tex">\( a \)</span> <span class="math-tex">\( \% \)</span> <span class="math-tex">\( b \)</span></li> 
+    </ol> </li> 
+  </ol> 
+  <p><br> Операции <code>+</code>, <code>-</code>, <code>*</code> такие же, как в математике. Деление в программировании делится на два разных деления: <strong>нацело </strong>и <strong>с остатком</strong>. При делении двух <strong>целых</strong> чисел результатом также будет <strong>целое </strong>число. Например, при делении <span class="math-tex">\( 19 / 5 \)</span> результатом будет число <span class="math-tex">\(3\)</span>.</p> 
+  <p><strong>Оператор <span class="math-tex">\( \% \)</span></strong> возвращает остаток от деления. Результатом операции <span class="math-tex">\(19 \)</span> <span class="math-tex">\( \% \)</span> <span class="math-tex">\( 5 \)</span> будет <span class="math-tex">\( 4 \)</span>. Стоит заметить, что <span class="math-tex">\( 5\%9=5 \)</span>.<br> <br> Для лучшего понимания операций рассмотрим пример:</p> 
+  <pre><code>static void Main(string[] args)
+{
+&nbsp; &nbsp; int a = 5;
+&nbsp; &nbsp; int b = 2;
+&nbsp; &nbsp; Console.WriteLine("a =  " + a + ", b = " + b);
+ 
+&nbsp; &nbsp; int result = a + b;
+&nbsp; &nbsp; Console.WriteLine("Сложение, a + b =  " + result);
+ 
+&nbsp; &nbsp; result = a * b;
+&nbsp; &nbsp; Console.WriteLine("Умножение, a * b =  " + result);
+ 
+&nbsp; &nbsp; result = a / b;
+&nbsp; &nbsp; Console.WriteLine("Деление, a / b =  " + result + " a и  b - целые числа, деление только нацело");
+ 
+&nbsp; &nbsp; int resultMod = a % b;
+&nbsp; &nbsp; Console.WriteLine("Деление с остатком, a % b =  " + resultMod + "Остаток от деления");
+}</code></pre> 
+  <p style="text-align: center;">&nbsp;</p> 
+  <p>При вычислении&nbsp;выражений,&nbsp;содержащих несколько операций, приоритет операций такой же, как в математике. Чтобы повысить приоритет операции, используются <strong>скобки</strong>:</p> 
+  <pre><code>2 + 2 * 2 = 6&nbsp;
+(2 + 2) * 2 = 8</code></pre> 
+  <p>&nbsp;</p> 
+  <h3 style="text-align: center;">Унарные операторы</h3> 
+  <p>Унарных арифметических операторов есть всего два:</p> 
+  <ul> 
+   <li><strong>инкрементация </strong>«<code>++</code>»</li> 
+   <li><strong>декрементация </strong>«<code>--</code>» (два знака "минус")</li> 
+  </ul> 
+  <p>Инкрементация <strong>увеличивает</strong> операнд на <strong>единицу</strong>, а декрементация&nbsp;–&nbsp;<strong>уменьшает </strong>на <strong>единицу</strong>.</p> 
+  <pre><code>static void Main(string[] args)
+{ &nbsp; 
+    int a = 0, b = 5; &nbsp; 
+    a++; // a = 1 &nbsp; 
+    b--; // b = 4
+}</code></pre>
+ </body>
+</html>

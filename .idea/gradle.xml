@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="distributionType" value="WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/util" />
+            <option value="$PROJECT_DIR$/Общая информация о курсе/Введение/Programming" />
+            <option value="$PROJECT_DIR$/Общая информация о курсе/Введение/Programming (1)" />
+            <option value="$PROJECT_DIR$/Общая информация о курсе/Введение/Sorting" />
+            <option value="$PROJECT_DIR$/Общая информация о курсе/Введение/Theory" />
+            <option value="$PROJECT_DIR$/Общая информация о курсе/Введение/Theory (1)" />
+            <option value="$PROJECT_DIR$/Общая информация о курсе/Введение/Theory (2)" />
+            <option value="$PROJECT_DIR$/Общая информация о курсе/Введение/Theory (3)" />
+            <option value="$PROJECT_DIR$/Общая информация о курсе/Введение/Theory (4)" />
+            <option value="$PROJECT_DIR$/Общая информация о курсе/Введение/Theory (5)" />
+            <option value="$PROJECT_DIR$/Общая информация о курсе/Введение/Video" />
+            <option value="$PROJECT_DIR$/Общая информация о курсе/Введение/Video (1)" />
+            <option value="$PROJECT_DIR$/Общая информация о курсе/Введение/Video (2)" />
+            <option value="$PROJECT_DIR$/Общая информация о курсе/Введение/Video (3)" />
+            <option value="$PROJECT_DIR$/Общая информация о курсе/Познакомимся/Quiz" />
+            <option value="$PROJECT_DIR$/Общая информация о курсе/Познакомимся/Quiz (1)" />
+            <option value="$PROJECT_DIR$/Общая информация о курсе/Познакомимся/Quiz (2)" />
+            <option value="$PROJECT_DIR$/Общая информация о курсе/Познакомимся/Theory" />
+            <option value="$PROJECT_DIR$/Общая информация о курсе/Познакомимся/Theory (1)" />
+            <option value="$PROJECT_DIR$/Общая информация о курсе/Познакомимся/Theory (2)" />
+            <option value="$PROJECT_DIR$/Общая информация о курсе/Познакомимся/Theory (3)" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Ввод-вывод, оператор присваивания/Matching" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Ввод-вывод, оператор присваивания/Programming" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Ввод-вывод, оператор присваивания/Programming (1)" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Ввод-вывод, оператор присваивания/Quiz" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Ввод-вывод, оператор присваивания/Quiz (1)" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Ввод-вывод, оператор присваивания/Quiz (2)" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Ввод-вывод, оператор присваивания/Quiz (3)" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Ввод-вывод, оператор присваивания/Quiz (4)" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Ввод-вывод, оператор присваивания/Quiz (5)" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Ввод-вывод, оператор присваивания/Quiz (6)" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Ввод-вывод, оператор присваивания/Quiz (7)" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Ввод-вывод, оператор присваивания/Text" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Ввод-вывод, оператор присваивания/Theory" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Ввод-вывод, оператор присваивания/Theory (1)" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Ввод-вывод, оператор присваивания/Video" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Ввод-вывод, оператор присваивания/Video (1)" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Целые числа/Number" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Целые числа/Programming" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Целые числа/Programming (1)" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Целые числа/Programming (2)" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Целые числа/Programming (3)" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Целые числа/Programming (4)" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Целые числа/Programming (5)" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Целые числа/Programming (6)" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Целые числа/Programming (7)" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Целые числа/Programming (8)" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Целые числа/Theory" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Целые числа/Theory (1)" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Целые числа/Video" />
+            <option value="$PROJECT_DIR$/Типы данных. Переменные/Целые числа/Video (1)" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

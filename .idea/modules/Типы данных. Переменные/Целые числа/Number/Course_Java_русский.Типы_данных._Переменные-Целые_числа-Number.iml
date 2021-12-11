@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":Типы_данных._Переменные-Целые_числа-Number" external.linked.project.path="$MODULE_DIR$/../../../../../Типы данных. Переменные/Целые числа/Number" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="Course_Java_русский" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../Типы данных. Переменные/Целые числа/Number">
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../Типы данных. Переменные/Целые числа/Number/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../Типы данных. Переменные/Целые числа/Number/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../Типы данных. Переменные/Целые числа/Number/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

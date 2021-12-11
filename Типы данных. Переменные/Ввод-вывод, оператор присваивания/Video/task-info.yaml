@@ -1,0 +1,35 @@
+type: video
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+thumbnail: https://ucarecdn.com/28154f5e-64bc-49c8-b46d-3b8ab4caad29/
+sources:
+- src: https://ucarecdn.com/b0d460ac-adca-49ca-9842-0a59e55444ca/35457_1080_f41c17c7d165c73c20e7ee3bce7b9457.mp4
+  res: 1080
+  type: video/mp4
+  label: 1080p
+- src: https://ucarecdn.com/67c8207d-fecd-4331-ae29-5e23c7afc831/35457_720_8c03093ff6c3f1cffdef8fa4c44e8e8e.mp4
+  res: 720
+  type: video/mp4
+  label: 720p
+- src: https://ucarecdn.com/9d9fbc8b-75fe-450d-80c5-7f0283e674cd/35457_540_e780ebc09b501fb6d7d74cffb431ea72.mp4
+  res: 540
+  type: video/mp4
+  label: 540p
+- src: https://ucarecdn.com/66096c8e-6ab6-49f9-8d2b-f88fb4349060/35457_360_e56c12e747c921f160a2f97e368ec26b.mp4
+  res: 360
+  type: video/mp4
+  label: 360p
+currentTime: 0
+status: Unchecked
+record: -1
+post_submission_on_open: true

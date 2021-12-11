@@ -1,0 +1,129 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Ввод-вывод информации. Типы данных</h2> 
+  <h3 style="text-align: center;">Console.WriteLine</h3> 
+  <p>Мы уже знаем, что выводить строки можно с помощью команды <code>Console.Write()</code>. Есть еще похожая команда <code>Console.WriteLine()</code>. Она не только выводит строку, но и переводит после этого&nbsp;курсор<strong> </strong>в консоли <strong>на новую строку</strong>.</p> 
+  <p><br> Для лучшего понимания рассмотрим два примера.</p> 
+  <pre><code class="language-cs">static void Main(string[] args)
+{
+&nbsp;  Console.Write("Hello"); // вывод
+&nbsp;  Console.Write("World!"); // вывод 
+}</code></pre> 
+  <p>Получим строку:</p> 
+  <pre><code>HelloWorld!</code></pre> 
+  <p>Дело в том, что после команды</p> 
+  <pre><code class="language-cs">Console.Write("Hello");</code></pre> 
+  <p>курсор в консоли остается на той же строке. Туда же&nbsp;вторая команда дописывает строку "<strong>World!</strong>". Таким образом и получается склеенная строка.</p> 
+  <p>&nbsp;</p> 
+  <p>А если используем&nbsp;<code>Console.WriteLine()</code>:</p> 
+  <pre><code class="language-cs">static void Main(string[] args)
+{
+   Console.WriteLine("Hello"); // вывод и перенос на новую строку
+   Console.WriteLine("World!"); // вывод и перенос на новую строку
+}</code></pre> 
+  <p>Вывод будет следующим:</p> 
+  <pre><code>Hello
+World!</code></pre> 
+  <p>Дело в том, что после команды</p> 
+  <pre><code class="language-cs">Console.WriteLine("Hello");</code></pre> 
+  <p>курсор передвинулся на следующую строку. И уже на новой строке выводится "<strong>World!</strong>".</p> 
+  <p>&nbsp;</p> 
+  <h3 style="text-align: center;">Вывод информации</h3> 
+  <p>С помощью этих команд можно выводить <strong>числа </strong>или результат вычисления выражений. Например:</p> 
+  <pre><code class="language-cs">static void Main(string[] args)
+
+{
+  Console.WriteLine(26); 
+
+  Console.WriteLine(1024 + 48); // 1072
+
+  Console.WriteLine(5 + 8 * 2); // 21
+
+  Console.Write((5 + 8) * 2); // 26
+
+}</code></pre> 
+  <p>Через <code>//</code> указано то, что будет после исполнения команды. То есть вывод будет следующим:</p> 
+  <pre><code>26
+1072
+21
+26</code></pre> 
+  <p>Как вы могли заметить, каждый результат выводится на каждой строке. При этом&nbsp;<strong>операции </strong>над числами внутри команды осуществляются по правилам&nbsp;<strong>математики:</strong> числа складываются, умножаются и так далее.&nbsp;&nbsp;</p> 
+  <p>&nbsp;</p> 
+  <h3 style="text-align: center;">Форматированный вывод</h3> 
+  <p>Довольно часто есть необходимость выводить числа и строки вместе.</p> 
+  <p>Для этого строку нужно обозначить в кавычках (чтоб компилятор ее "узнал" как строку), а между числом и строкой нужно поставить знак плюс(<code>+</code>), который тут просто приклеивает строку и число, а не считает математически.</p> 
+  <p>Для лучшего понимания рассмотрим код:</p> 
+  <pre><code class="language-cs">static void Main(string[] args)
+{  
+   Console.WriteLine("5 + 7 = " + 12); // 5 + 7 = 12 
+  
+   Console.WriteLine(5 + " + " + 7 + " = " + 12); // 5 + 7 = 12 
+
+   Console.WriteLine(3 + " " + 6); // вывод двух чисел через пробел, то есть 3 6
+}</code></pre> 
+  <p>Заметьте, что пробел (<code>" "</code>) – это тоже строка, причем <strong>не пустая</strong>. Пример показывает, что один и тот же результат вывода можно достичь <strong>разными способами</strong>.</p> 
+  <p>&nbsp;</p> 
+  <h3 style="text-align: center;">&nbsp; <strong>Переменная</strong></h3> 
+  <p>Программа, которая всегда считает результат вычисления одного и того же выражения, довольно скучная и бессмысленная. Полезная программа должна оперировать с различными данными без внесения изменений в код.<br> <br> Для хранения информации в программировании используются <strong>переменные</strong>. <strong>Переменную </strong>можно рассматривать как <strong>ящик</strong>. Однажды сделав такой ящик, мы можем класть в него разные вещи. Под каждый тип информации - нужен ящик соответствующего типа: вы ведь не будете складывать деньги, спички, бензин и шоколад в один и тот же ящик. Таким образом, у каждой переменной есть <strong>тип</strong>, который надо указать при ее создании. Также у переменной есть <strong>имя</strong>, по которому мы будем к ней&nbsp;обращаться.<br> <br> Итак,&nbsp;<strong>переменная </strong>- это ячейка памяти определенного <strong>типа</strong>, имеющая <strong>имя</strong>.<br> <br> Чтобы создать переменную, которая будет хранить <strong>целые числа</strong>, нужно написать:</p> 
+  <pre><code class="language-cs">int a;</code></pre> 
+  <p>Это мы <strong>объявили переменную</strong>, указали, что там будут хранится <strong>целые числа</strong> и обозвали ее&nbsp;<code>a</code>.<br> <br> Теперь в созданную переменную можем записывать только <strong>числа. </strong>Чтобы записать в переменную целое число, нужно воспользоваться следующим правилом:</p> 
+  <p style="text-align: center;"><strong>куда = что</strong></p> 
+  <p><br> где <code>=</code>&nbsp;– <strong>оператор присвоения. </strong>Воспользуемся данным правилом. Например, запишем в переменную число 7:</p> 
+  <pre><code class="language-cs">a = 7;</code></pre> 
+  <p><br> Операции производятся <strong>справа налево </strong>- взять число 7 и записать в переменную. Эти два шага можно объединить, то есть можно сразу объявить и <strong>инициализировать</strong>, иначе говоря - присвоить начальное значение:</p> 
+  <pre><code class="language-cs">int a = 7;</code></pre> 
+  <p><br> Мы объявили переменную <strong>a</strong> и записали сразу ее значение - 7. &nbsp; Чтобы узнать <strong>содержимое переменной</strong>, нужно обратиться к ней&nbsp;по <strong>имени</strong>. Например:</p> 
+  <pre><code class="language-cs">int b = a * 5;</code></pre> 
+  <p><br> В переменную запишется значение 35, так как вместо переменной <strong>a</strong> подставится его <strong>значение</strong>, то есть <strong>7</strong>. Также мы можем поменять значение переменной a:</p> 
+  <pre><code class="language-cs">a = a + 8;</code></pre> 
+  <p><br> Действия выполняются <strong>справа налево от знака "="</strong>, значит, мы берем значение переменной <strong>а,</strong> которое равно 7, к нему добавляем 8 и снова записываем в переменную <strong>а</strong>. Таким образом, значение переменной увеличили на 8.</p> 
+  <p>Давайте разберем еще пример для лучшего понимания:</p> 
+  <pre><code class="language-cs">int a = 6;
+
+int b = a * 8; // 48
+
+a = b - 8; // 40
+
+int c = b + a; // 88
+
+Console.WriteLine(c); // вывод 88</code></pre> 
+  <p>&nbsp;</p> 
+  <h3 style="text-align: center;"><strong>Типы данных</strong></h3> 
+  <p>Кроме целого числа, существуют множество типов данных, однако мы рассмотрим основные типы данных:</p> 
+  <ul> 
+   <li><strong>int</strong> - целое число от&nbsp;<code>-2147483648</code>&nbsp;до&nbsp;<code>2147483647</code></li> 
+   <li><strong>long&nbsp;</strong>- целое число от&nbsp;<code>–9 223 372 036 854 775 808</code>&nbsp;до&nbsp;<code>9 223 372 036 854 775 807</code></li> 
+   <li><strong>string </strong>- строка</li> 
+   <li><strong>double </strong>- число с дробной частью (вещественные числа)</li> 
+   <li><strong>char </strong>- символ</li> 
+   <li><strong>bool </strong>- специальный тип, принимает только два значения - <strong>true </strong>или <strong>false</strong></li> 
+  </ul> 
+  <p>Например:</p> 
+  <pre><code class="language-cs">string name = "Олег";
+int age = 25;
+double weight = 80.5;
+string stringToShow = name + ", возраст " + age + ", вес " + weight;
+Console.WriteLine(stringToShow);</code></pre> 
+  <p><br> Стоит отметить, что при инициализации вещественных чисел дробная часть отделяется от целой <strong>точкой</strong>.</p> 
+  <p>От типа данных зависит, какая информация будет храниться в переменной. Также <strong>от типа</strong> переменной <strong>зависит поведение операций</strong> над ними.<br> Например, для строк знак плюс (<strong>+</strong>) означает <strong>склеивание </strong>между собой, а для целых и вещественных чисел плюс <strong>складывает </strong>их математически и возвращает результат. Давайте посмотрим в коде: &nbsp;</p> 
+  <pre><code class="language-cs">int a = 5;
+int b = 10;
+Console.WriteLine(a + b); // 15
+
+string s1 = "5";
+string s2 = "10";
+Console.WriteLine(s1 + s2); // 510</code></pre> 
+  <p>&nbsp;</p> 
+  <p><strong><span style="color: #a03881;">Примечания:&nbsp;</span></strong></p> 
+  <ol> 
+   <li> <p>То, что мы пишем в круглых скобках у команд&nbsp;<code>Console.Write()</code>&nbsp;и&nbsp;&nbsp;<code>Console.WriteLine()</code>называется&nbsp;<strong>аргументами&nbsp;</strong>или&nbsp;<strong>параметрами&nbsp;</strong>команды.<br> &nbsp;</p> </li> 
+   <li> <p>Все команды, которые мы уже рассмотрели и которые в будущем рассмотрим, записываются в приведенном в лекциях формате, другое написание недопустимо, так как в&nbsp;<code>C#</code> строчные и&nbsp;заглавные буквы&nbsp;<a href="https://ru.wikipedia.org/wiki/%D0%A7%D1%83%D0%B2%D1%81%D1%82%D0%B2%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%BA_%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D1%83_%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D0%BE%D0%B2" rel="noopener noreferrer nofollow" target="_blank">различны</a>.&nbsp;<br> &nbsp;</p> </li> 
+   <li> <p>Команда&nbsp;<code>Console.WriteLine()</code>&nbsp;с пустым списком аргументов (пустые круглые скобки) просто вставляет новую пустую строку.&nbsp;Например:</p> <pre><code class="language-cs">Console.WriteLine("Строка 1");
+Console.WriteLine();
+Console.WriteLine("Строка 3");</code></pre> <p>выведет на экран три строки, одна из которых пустая:</p> <pre><code>Строка 1
+
+Строка 3</code></pre> </li> 
+  </ol>
+ </body>
+</html>
